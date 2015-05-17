@@ -40,6 +40,7 @@ module Graphics.X11.Xft ( XftColor
 			, xftDrawSetClipRectangles
 			, xftDrawSetSubwindowMode
 			, xftInitFtLibrary
+			, xftCharExists
  			  )
 
 where
@@ -251,6 +252,9 @@ xftDrawSetSubwindowMode d i = cXftDrawSetSubwindowMode d (fi i)
 
 foreign import ccall "XftInitFtLibrary"
   xftInitFtLibrary :: IO ()
+
+foreign import ccall "XftCharExists"
+  xftCharExists :: Display -> XftFont -> (#type FcChar32) -> IO (#type FcBool)
 
 {-
 These functions minimize round-trip between the library and the using program (maybe also to the X server?)
