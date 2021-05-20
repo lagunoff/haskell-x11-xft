@@ -35,6 +35,7 @@ module Graphics.X11.Xft ( XftColor
 			, xftFontClose
 			, xftDrawGlyphs
 			, xftDrawString
+                        , cXftDrawStringUtf8
 			, xftTextExtents
 			, xftDrawRect
 			, xftDrawSetClipRectangles
