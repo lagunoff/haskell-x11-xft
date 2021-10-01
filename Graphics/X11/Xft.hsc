@@ -6,46 +6,8 @@
 --
 -----------------------------------------------------------------------------
 
-module Graphics.X11.Xft ( XftColor
-			, xftcolor_pixel
-			, allocaXftColor
-			, withXftColorName
-			, withXftColorValue
-			, XftDraw
-			, withXftDraw
-			, xftDrawCreate
-			, xftDrawCreateBitmap
-			, xftDrawCreateAlpha
-			, xftDrawChange
-			, xftDrawDisplay
-			, xftDrawDrawable
-			, xftDrawColormap
-			, xftDrawVisual
-			, xftDrawDestroy
-			, XftFont
-			, xftfont_ascent
-			, xftfont_descent
-			, xftfont_height
-			, xftfont_max_advance_width
-			, xftFontOpen
-			, xftFontOpenXlfd
-			, xftLockFace
-			, xftUnlockFace
-			, xftFontCopy
-			, xftFontClose
-			, xftDrawGlyphs
-			, xftDrawString
-			, xftTextExtents
-			, xftDrawRect
-			, xftDrawSetClipRectangles
-			, xftDrawSetSubwindowMode
-			, xftInitFtLibrary
-			, xftCharExists
-                        , cXftDrawStringUtf8
-                        , cXftTextExtentsUtf8
- 			  )
+module Graphics.X11.Xft where
 
-where
 import Graphics.X11
 import Graphics.X11.Xlib.Types
 import Graphics.X11.Xlib.Region
